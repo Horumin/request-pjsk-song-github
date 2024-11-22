@@ -1,0 +1,135 @@
+/* Reset styles */
+body, h2, table, tr, td, th, a, form, input, select, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #56ccf2, #2f80ed); /* Blue gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Center container for both pages */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Titles */
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Shared Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #56ccf2;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2f80ed;
+}
+
+/* Form Styling (Edit User) */
+label {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #56ccf2;
+    box-shadow: 0 0 5px rgba(86, 204, 242, 0.5);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #56ccf2;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2f80ed;
+}
+
+/* Table Styling (View Users) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #56ccf2;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    input, select, input[type="submit"], .button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
